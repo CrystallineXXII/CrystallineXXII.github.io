@@ -7,13 +7,14 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&family=Roboto+Mono:wght@300&display=swap"
+        rel="stylesheet">
 
 
     <title>CrystallineXXII</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
-    <style>
-
+    <link rel="stylesheet" href="style.css">
+    <!--<style>
         body,
         h1,
         p {
@@ -38,6 +39,20 @@
 
         }
 
+        nav {
+            background-color: #132124;
+            text-align: left;
+            padding: 4px;
+        }
+
+        .navlink {
+            /*border: 2px solid grey;*/
+            color: white;
+            padding: 4px 4px;
+        }
+        .navlink:hover {
+            background-color: grey;
+        }
 
         h1 {
             font-size: 36px;
@@ -75,15 +90,40 @@
             background-color: #1f3438;
             border-radius: 5px;
         }
-    </style>
+
+        .codeblock {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 2em 3em;
+            background-color: #132124;
+            border-radius: 8px;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 14px;
+        }
+
+        .codeheader {
+            /* font-family: "Raleway", sans-serif; */
+            padding: 1em;
+            font-size: 20px;
+            border-radius: 8px;
+            background-color: #1f3438;
+            text-align: left;
+        }
+    </style>-->
 </head>
 
 <body>
     <header>
         <h1>CrystallineXXII</h1>
     </header>
+    <nav class='sticky'>
+
+        <a class="navlink" href="index.html">Home</a>
+|
+        <a class="navlink" href="poem1.html">Poem</a>
+    </nav>
     <div class="container">
-      <hr>
+        <hr>
         <h2>Who I Am</h2>
         <p>
             Hey there! I'm Joseph Chacko, a passionate student and game developer with a strong interest in machine
@@ -110,8 +150,8 @@
                 shooter</li>
             <li><a href="https://github.com/CrystallineXXII/ShipSu">ShipSu</a> - A strategy control point capture game
                 made in pygame</li>
-                
-            <li><a href ="">Xenon</a> - Custom GUI framework extending pygame</li>
+
+            <li><a href="">Xenon</a> - Custom GUI framework extending pygame</li>
         </ul>
         <p>
             You can find some more of my projects — some unfinished — on my <a
@@ -125,7 +165,7 @@
             <a href="mailto:josephchacko2006@gmail.com">josephchacko2006@gmail.com</a>. Let's connect and
             discuss all things programming, AI, and game development!
         </p>
-        
+
     </div>
 </body>
 
