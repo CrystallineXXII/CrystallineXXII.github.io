@@ -135,7 +135,7 @@ a.title-link {
     
     animation: 0.5s crystallinexxii-in;
     animation-timing-function: linear;
-    animation-fill-mode: forwards
+    animation-fill-mode: forwards;
     
     -webkit-animation: 0.5s crystallinexxii-in;
     -webkit-animation-timing-function: linear;
@@ -149,7 +149,7 @@ a.title-link {
   
   animation: 0.5s crystallinexxii-out;
   animation-timing-function: linear;
-  animation-fill-mode: forwards
+  animation-fill-mode: forwards;
 
   -webkit-animation: 0.5s crystallinexxii-out;
   -webkit-animation-timing-function: linear;
