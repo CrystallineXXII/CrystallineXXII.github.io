@@ -1,3 +1,25 @@
+@keyframes crystallinexxii-out {
+  from {
+    font-size: 40px;
+    text-align: center;
+  }
+  to{
+    font-size: 20px;
+    text-align: left;
+  }
+}
+
+@keyframes crystallinexxii-in {
+  from {
+    font-size: 20px;
+    text-align: left;
+  }
+  to{
+    font-size: 40px;
+    text-align: center;
+  }
+}
+
 body,
 h1,
 p {
@@ -15,7 +37,6 @@ body {
 
 header {
   background-color: #10938f;
-  padding: 20px 0 5px;
   text-align: center;
   border-radius: 0px 0px 10px 10px;
 }
@@ -23,14 +44,17 @@ header {
 nav {
   background-color: #193237;
   text-align: center;
-  padding: 4px;
+  padding: 4px 0px 6px;
   /*max-width: 800px;*/
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0px;
+  
   font-size: 20px;
 }
 
+.top{
+  width: 100%;
+  position: sticky;
+  top: 0;
+}
 .navlink {
   /*border: 2px solid grey;*/
   color: white;
@@ -83,6 +107,25 @@ a.title-link {
     font-size: 25px;
 }
 
+.main-header {
+    padding: 10px 0px;
+    font-size: 40px;
+    text-align: center;
+    animation: 0.5s crystallinexxii-in;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards
+
+}
+
+.post-scroll-main-header {
+  padding: 10px;
+  font-size: 20px;
+  animation: 0.5s crystallinexxii-out;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards
+  
+  
+}
 .container {
   max-width: 800px;
   margin: 0 auto;
