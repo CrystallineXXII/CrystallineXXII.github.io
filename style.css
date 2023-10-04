@@ -20,6 +20,28 @@
   }
 }
 
+@-webkit-keyframes crystallinexxii-out {
+  from {
+    font-size: 40px;
+    text-align: center;
+  }
+  to{
+    font-size: 20px;
+    text-align: left;
+  }
+}
+
+@-webkit-keyframes crystallinexxii-in {
+  from {
+    font-size: 20px;
+    text-align: left;
+  }
+  to{
+    font-size: 40px;
+    text-align: center;
+  }
+}
+
 body,
 h1,
 p {
@@ -108,21 +130,30 @@ a.title-link {
 }
 
 .main-header {
-    padding: 10px 0px;
+    padding: 10px;
     font-size: 40px;
-    text-align: center;
+    
     animation: 0.5s crystallinexxii-in;
     animation-timing-function: linear;
     animation-fill-mode: forwards
+    
+    -webkit-animation: 0.5s crystallinexxii-in;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards
 
 }
 
 .post-scroll-main-header {
   padding: 10px;
   font-size: 20px;
+  
   animation: 0.5s crystallinexxii-out;
   animation-timing-function: linear;
   animation-fill-mode: forwards
+
+  -webkit-animation: 0.5s crystallinexxii-out;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards
   
   
 }
