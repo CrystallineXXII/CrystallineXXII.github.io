@@ -1,44 +1,44 @@
 @keyframes crystallinexxii-out {
   from {
     font-size: 40px;
-    text-align: center;
+    text-indent: calc(50% - 130px);
   }
   to{
     font-size: 20px;
-    text-align: left;
+    text-indent: 0px;
   }
 }
 
 @keyframes crystallinexxii-in {
   from {
     font-size: 20px;
-    text-align: left;
+    text-indent: 0px;
   }
   to{
     font-size: 40px;
-    text-align: center;
+    text-indent: calc(50% - 130px);
   }
 }
 
 @-webkit-keyframes crystallinexxii-out {
   from {
     font-size: 40px;
-    text-align: center;
+    text-indent: calc(50% - 130px);
   }
   to{
     font-size: 20px;
-    text-align: left;
+    text-indent: 0px;
   }
 }
 
 @-webkit-keyframes crystallinexxii-in {
   from {
     font-size: 20px;
-    text-align: left;
+    text-indent: 0px;
   }
   to{
     font-size: 40px;
-    text-align: center;
+    text-indent: calc(50% - 130px);
   }
 }
 
@@ -59,7 +59,7 @@ body {
 
 header {
   background-color: #10938f;
-  text-align: center;
+  text-align: left;
   border-radius: 0px 0px 10px 10px;
 }
 
@@ -74,7 +74,7 @@ nav {
 
 .top{
   width: 100%;
-  position: sticky;
+  position: fixed;
   top: 0;
 }
 .navlink {
@@ -131,8 +131,7 @@ a.title-link {
 
 .main-header {
     padding: 10px;
-    font-size: 40px;
-    
+
     animation: 0.5s crystallinexxii-in;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
@@ -145,8 +144,7 @@ a.title-link {
 
 .post-scroll-main-header {
   padding: 10px;
-  font-size: 20px;
-  
+
   animation: 0.5s crystallinexxii-out;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
@@ -159,7 +157,7 @@ a.title-link {
 }
 .container {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 101px auto;
   padding: 20px;
   background-color: #1f3438;
   border-radius: 5px;

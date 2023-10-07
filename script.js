@@ -15,5 +15,5 @@ window.addEventListener("scroll", function(event){
   changed = false
   }
   
-  console.log(this.scrollY,changed,mainHeader.classList);
+  //console.log(this.scrollY,changed,mainHeader.classList);
 });
