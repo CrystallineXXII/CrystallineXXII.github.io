@@ -1,5 +1,5 @@
-let mainHeader = document.getElementsByClassName ("main-header")[0];
-let changed = true;
+let mainHeader = document.getElementsByClassName ("initial-main-header")[0];
+let changed = false;
 
 window.addEventListener("scroll", function(event){
   if (this.scrollY > 20 && changed == false){
