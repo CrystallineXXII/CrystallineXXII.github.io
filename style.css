@@ -136,11 +136,11 @@ a.title-link {
 .main-header {
     padding: 10px;
 
-    animation: 0.5s crystallinexxii-in;
+    animation: 0.25s crystallinexxii-in;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
     
-    -webkit-animation: 0.5s crystallinexxii-in;
+    -webkit-animation: 0.25s crystallinexxii-in;
     -webkit-animation-timing-function: linear;
     -webkit-animation-fill-mode: forwards
 
@@ -149,11 +149,11 @@ a.title-link {
 .post-scroll-main-header {
   padding: 10px;
 
-  animation: 0.5s crystallinexxii-out;
+  animation: 0.25s crystallinexxii-out;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
 
-  -webkit-animation: 0.5s crystallinexxii-out;
+  -webkit-animation: 0.25s crystallinexxii-out;
   -webkit-animation-timing-function: linear;
   -webkit-animation-fill-mode: forwards
   
