@@ -1,44 +1,789 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>CrystallineXXII</title>
-    <link rel="icon" type="image/png" href="images/favicon.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="prism.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-</head>
+  </head>
 
-<body>
-<div class="top">
-    <header class="initial-main-header">
+  <body>
+    <div class="top" style="z-index: 1">
+      <header class="initial-main-header">
         <b>CrystallineXXII</b>
-    </header>
-    <nav class='sticky'>
-
+      </header>
+      <nav class="sticky">
         <a class="navlink" href="index.html">Home</a>
-|
+        |
         <a class="navlink" href="projects.html">Projects</a>
-|
+        |
         <a class="navlink-selected" href="miscellaneous.html">Miscellaneous</a>
-    </nav>
-  </div>
+      </nav>
+    </div>
     <div class="container">
-      
-      <header id="crystalline_curated" class="page-header">Crystalline Curated</header>
-      <br>
-      <div id="spotify"style="left: 0; width: 100%; height: 600px; position: relative;"><iframe src="https://open.spotify.com/embed/playlist/2ZAG3OZQYfimWsvPDXBapp?utm_source=oembed" style="top: 0; left: 0; width: 100%; height: 100%; position: absolute; border: 0;" allowfullscreen allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture;"></iframe></div>
-      
-      
-      <hr>
-           </div>
+      <header id="crystalline_curated" class="page-header">
+        Crystalline Curated
+      </header>
+      <br />
+      <div
+        id="spotify"
+        style="left: 0; width: 100%; height: 600px; position: relative"
+      >
+        <iframe
+          src="https://open.spotify.com/embed/playlist/2ZAG3OZQYfimWsvPDXBapp?utm_source=oembed"
+          style="
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            border: 0;
+          "
+          allowfullscreen
+          allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture;"
+        ></iframe>
+      </div>
+      <hr />
+      <header id="record_heading" class="page-header">
+        Record-C12
+      </header>
+      <div id="record" style="font-size: 10px">
+        <h1 id="record-1"><br />Record 1</h1>
+        <h2
+          id="q-write-a-program--using-functions-to-implement-a-4-function-calculator-"
+        >
+          Q: Write a program using functions to implement a 4 function
+          calculator :
+        </h2>
+        <pre><code class="language-py">def add(a,b): print(a+b)
+def sub(a,b): print(a-b)
+def mul(a,b): print(a*b)
+def div(a,b): print(a/b if b != 0 else float(&#39;inf&#39;))
+
+while True:
+    a = int(input(&#39;a: &#39;))
+    b = int(input(&#39;b: &#39;))
+    operator = input(&#39;&#39;&#39;
+(1) ADD
+(2) SUB
+(3) MUL
+(4) DIV
+&#39;&#39;&#39;)
+                     
+    if   operator == &#39;1&#39;:add(a,b)
+    elif operator == &#39;2&#39;:sub(a,b)
+    elif operator == &#39;3&#39;:mul(a,b)
+    elif operator == &#39;4&#39;:div(a,b)
+
+    if input(&#39;Continue? (y/n): &#39;) == &#39;n&#39;:break
+</code></pre>
+        <hr />
+        <hr />
+        <h1 id="record-2"><br />Record 2</h1>
+        <h2 id="q-write-a-menu-driven-program-to-operate-on-lists-">
+          Q: Write a menu driven program to operate on lists :
+        </h2>
+        <pre><code class="language-py">List = []
+def append(elem):
+    List.append(elem)
+def insert(elem,pos:int):
+    List.insert(pos,elem)
+def delete(pos:int):
+    List.pop(pos)
+def extend(string:str):
+    try:
+        l = eval(string)
+        List.extend(l)
+    except (NameError,SyntaxError) as e:
+        print(e)
+
+while True:
+    print(f&#39;&#39;&#39;
+          Current list: {List}
+          
+          (1) Append
+          (2) Insert
+          (3) Delete
+          (4) Extend
+
+          &#39;&#39;&#39;)
+    try:
+        ch = int(input(&quot;Choice: &quot;))
+    
+        if   ch == 1:append(int(input(&#39;Element: &#39;)))
+        elif ch == 2:insert(int(input(&#39;Element: &#39;)),int(input(&#39;Position: &#39;)))
+        elif ch == 3:delete(int(input(&#39;Position: &#39;)))
+        elif ch == 4:extend(input(&#39;Element: &#39;))
+    
+    except ValueError:
+        continue
+</code></pre>
+        <hr />
+        <hr />
+        <h1 id="record-3"><br />Record 3</h1>
+        <h2
+          id="q-write-a-program-to-show-the-statistics-of-a-string-using-fuctions"
+        >
+          Q: Write a program to show the statistics of a string using fuctions:
+        </h2>
+        <pre><code class="language-py">def length(string:str) -&gt; int:
+    a = 0
+    for i in string: 
+        a += 1
+    return a
+ 
+def alpha_count(string:str) -&gt; int:
+    a = 0
+    for i in string: 
+        if i.isalpha():
+            a += 1
+    return a
+ 
+def num_count(string:str) -&gt; int:
+    a = 0
+    for i in string: 
+        if i.isdigit():
+            a += 1
+    return a
+ 
+def symbol_count(string:str) -&gt; int:
+    a = 0
+    for i in string: 
+        if not i.isalnum():
+            a += 1
+    return a
+ 
+def word_count(string:str) -&gt; int:
+    a = 0
+    for i in string: 
+        if i.isspace():
+            a += 1
+    return a + 1
+ 
+while True:
+    instr = input(&#39;String: &#39;)
+    print(f&#39;&#39;&#39;
+LENGTH OF STRING      : {length(instr)}
+ALPHABETS IN STRING   : {alpha_count(instr)}
+NUMBERS IN STRING     : {num_count(instr)}
+SYMBOLS IN STRING     : {symbol_count(instr)}
+WORDS IN STRING       : {word_count(instr)}
+ 
+    &#39;&#39;&#39;)
+</code></pre>
+        <hr />
+        <hr />
+        <h1 id="record-4"><br />Record 4</h1>
+        <h2
+          id="q-write-a-program-to-store-the-names-of-students-in-a-tuple-write-functions-to-add-and-search-for-a-name-in-the-tuple"
+        >
+          Q: Write a program to store the names of students in a tuple. Write
+          functions to add and search for a name in the tuple:
+        </h2>
+        <pre><code class="language-py">record = ()
+
+def add(name):
+    global record
+    if name.lower().strip() in record:
+        return &#39;STUDENT ALREADY EXIST&#39;
+    else:
+        record += (name.lower().strip(),)
+
+def search(name):
+    global record
+    if name.lower().strip() in record:
+        return &#39;PRESENT&#39;
+    else:
+        return &#39;ABSENT&#39;
+    
+while True:
+    print(record)
+    print(&#39;&#39;&#39;
+    (1) ADD
+    (2) SEARCH
+    &#39;&#39;&#39;)
+
+    ch = int(input(&#39;Enter your choice: &#39;))
+    if   ch == 1:print(add(input(&#39;Name: &#39;)))
+    elif ch == 2:print(search(input(&#39;Name: &#39;)))
+
+    if input(&#39;Continue? (y/n): &#39;) == &#39;n&#39;:break
+</code></pre>
+        <hr />
+        <hr />
+        <h1 id="record-5"><br />Record 5</h1>
+        <h2
+          id="q-write-a-menu-driven-program-to-implement-a-phonebook-using-dictionary"
+        >
+          Q: Write a menu driven program to implement a phonebook using
+          dictionary:
+        </h2>
+        <pre><code class="language-py">phoneBook = {
+    &#39;john&#39;     :  8876773583,
+    &#39;james&#39;    :  9989786799,
+    &#39;nicole&#39;   :  7857674999,
+             }
+
+def add_contact(name:str,number:int):
+    if name.lower() in phoneBook:
+        return &#39;CONTACT ALREADY EXISTS&#39;
+    else:
+        phoneBook[name.lower()] = number
+        return &#39;SUCCESS&#39;
+
+def modify_contact(name:str,newnum:int):
+    if name.lower() in phoneBook:
+        phoneBook[name.lower()] = newnum
+        return &#39;SUCCESS&#39;
+    else:
+        return &#39;CONTACT DOES NOT EXIST&#39;
+    
+def search(name:str):
+    if name.lower() in phoneBook:
+        return phoneBook[name.lower()]
+    else:
+        return &#39;COULD NOT FIND CONTACT&#39;
+    
+def delete_contact(name:str):
+    if name.lower() in phoneBook:
+        del phoneBook[name.lower()]
+        return &#39;SUCCESS&#39;
+    else:
+        return &#39;CANNOT DELETE NONEXISTENT CONTACT&#39;
+    
+def display():
+    for name in phoneBook:
+        print()
+        print(f&#39;{name.capitalize()}\t:  {phoneBook[name]}&#39;)
+while True:
+    print(&#39;&#39;&#39;
+                PHONEBOOK
+               -+-+-+-+-+-
+
+        (1) ADD A CONTACT
+        (2) MODIFY A CONTACT
+        (3) DELETE A CONTACT
+        (4) SEARCH FOR A CONTACT
+        (5) VIEW ALL CONTACTS
+    &#39;&#39;&#39;)
+
+    ch = int(input(&#39;Enter your choice: &#39;))
+    if   ch == 1:print(add_contact(input(&#39;Name: &#39;),int(input(&#39;Number:&#39;))))
+    elif ch == 2:print(modify_contact(input(&#39;Name: &#39;),int(input(&#39;New Number: &#39;))))
+    elif ch == 3:print(delete_contact(input(&#39;Name: &#39;)))
+    elif ch == 4:print(search(input(&#39;Name: &#39;)))
+    elif ch == 5: display()
+
+    if input(&#39;Continue? (y/n): &#39;) == &#39;n&#39;:break
+</code></pre>
+        <hr />
+        <hr />
+        <h1 id="record-6"><br />Record 6</h1>
+        <h2
+          id="q-write-a-program-to-show-the-words-lines-and-alphabets-in-a-file"
+        >
+          Q: Write a program to show the words, lines and alphabets in a file:
+        </h2>
+        <pre><code class="language-py">with open(&#39;poem.txt&#39;) as f:
+    l = f.readlines()
+    lines = len(l)
+    words = sum([len(i.split()) for i in l])
+    alphas = 0
+    f.seek(0)
+    for i in f.read():
+        for j in i:
+            if j.isalpha():
+                alphas += 1
+
+print(f&#39;&#39;&#39;
+LINES     : {lines}
+WORDS     : {words}
+ALPHABETS : {alphas}
+&#39;&#39;&#39;)
+</code></pre>
+        <hr />
+        <hr />
+        <h1 id="record-7"><br />Record 7</h1>
+        <h2
+          id="q-write-a-program-to-display-the-no-of-lines-starting-with-a-the-in-a-file"
+        >
+          Q: Write a program to display the no of lines starting with a
+          &#39;The&#39; in a file:
+        </h2>
+        <pre><code class="language-py">def the_count(filename):
+    with open(filename) as f:
+        count = 0
+        for i in f.readlines():
+            if i.startswith(&#39;The&#39;):
+                count += 1
+        return count
+
+print(f&#39;The number of line starting with \&#39;the\&#39; in lines.txt : {the_count(&quot;lines.txt&quot;)}&#39;)
+</code></pre>
+        <hr />
+        <hr />
+        <h1 id="record-8"><br />Record 8</h1>
+        <h2
+          id="q-write-a-program-to-display-the-no-of-times-he-or-she-is-mentioned-in-a-file"
+        >
+          Q: Write a program to display the no of times &quot;he&quot; or
+          &quot;she&quot; is mentioned in a file:
+        </h2>
+        <pre><code class="language-py">with open(&#39;story.txt&#39;) as f:
+    s = f.read()
+
+    he_count = s.count(&#39; he &#39;)
+    she_count = s.count(&#39; she &#39;)
+
+    print(f&#39;&#39;&#39;
+    HE  : {he_count}
+    SHE : {she_count}
+    &#39;&#39;&#39;)
+    
+</code></pre>
+        <hr />
+        <hr />
+        <h1 id="record-9"><br />Record 9</h1>
+        <h2
+          id="q-write-a-program-to-copy-all-lines-of-a-file-starting-with-a-to-a-new-file"
+        >
+          Q: Write a program to copy all lines of a file starting with
+          &#39;A&#39; to a new file:
+        </h2>
+        <pre><code class="language-py">def copy(fread,fwrite):
+    with open(fread) as f:
+        with open(fwrite,&#39;w&#39;) as fw:
+            l = f.readlines()
+            for line in l:
+                if line.startswith(&#39;A&#39;):
+                    fw.write(line)
+
+copy(&#39;article.txt&#39;,&#39;newfile.txt&#39;)
+print(&#39;EXECUTED SUCCESSFULLY...&#39;)
+</code></pre>
+        <hr />
+        <hr />
+        <h1 id="record-10"><br />Record 10</h1>
+        <h2 id="q-create-a-binary-file-interface-for-the-following">
+          Q: Create a binary file interface for the following:
+        </h2>
+        <p>
+          (1) Create a record<br />
+          (2) Display all records<br />
+          (3) Append a record
+        </p>
+        <pre><code class="language-py">import pickle as p
+
+def display():
+    with open(&#39;Student.dat&#39;,&#39;rb&#39;) as f:
+        l = []
+        try:
+
+            while True:
+                l.append(p.load(f))
+        except EOFError:
+            pass
+
+        for i in l:
+            print(f&#39;&#39;&#39;
+ROLL NO : {i[0]}
+NAME    : {i[1]}
+MARKS   : {i[2]}&#39;&#39;&#39;)
+
+
+def create():
+    def create_for(f):
+        while True:
+            roll = int(input(&#39;ROLL NO: &#39;))
+            name = input(&#39;NAME: &#39;)
+            marks = int(input(&#39;MARKS: &#39;))
+            data = [roll,name,marks]
+            p.dump(data,f)
+            if input(&#39;Continue? (y/n): &#39;) == &#39;n&#39;:
+                break
+    try:
+        f = open(&#39;Student.dat&#39;,&#39;rb&#39;)
+        f.close()
+        confirm = True if input(&#39;ARE YOU SURE YOU WANT TO OVERWRITE? (y/n): &#39;) == &#39;y&#39; else False
+        if confirm:
+            f = open(&#39;Student.dat&#39;,&#39;wb&#39;)
+            create_for(f)
+            f.close()
+
+    except FileNotFoundError:
+        f = open(&#39;Student.dat&#39;,&#39;wb&#39;)
+        create_for(f)
+        f.close()
+
+def append(data):
+    with open(&#39;Student.dat&#39;,&#39;ab&#39;) as f:
+        p.dump(data,f)
+
+while True:
+    print(&#39;&#39;&#39;
+    1. CREATE
+    2. APPEND
+    3. DISPLAY
+    4. EXIT
+    &#39;&#39;&#39;)
+    ch = int(input(&#39;ENTER YOUR CHOICE : &#39;))
+    if ch == 1:
+        create()
+    elif ch == 2:
+        data = [int(input(&#39;ROLL : &#39;)),input(&#39;NAME : &#39;),int(input(&#39;MARKS : &#39;))]
+        append(data)
+    elif ch == 3:
+        display()
+    elif ch == 4:
+        break
+    else:
+        print(&#39;INVALID CHOICE...&#39;)
+</code></pre>
+        <hr />
+        <hr />
+        <h1 id="record-11"><br />Record 11</h1>
+        <h2 id="q-create-a-binary-file-interface-for-the-following-1">
+          Q: Create a binary file interface for the following:
+        </h2>
+        <p>
+          (1) Create a record &#39;flights.dat&#39;<br />
+          (2) Display all records<br />
+          (3) Search a record
+        </p>
+        <pre><code class="language-py">import pickle as p
+
+def display():
+    with open(&#39;Flights.dat&#39;,&#39;rb&#39;) as f:
+        data = p.load(f)
+        for i in data:
+            print(f&#39;{i}: {data[i][0]}, ({data[i][1]} - {data[i][2]})&#39;)
+
+def create():
+    def create_for(f):
+        data = {}
+        while True:
+            data[input(&#39;Flight No.: &#39;)] = [input(&#39;Destination: &#39;),input(&#39;Departure: &#39;),input(&#39;Arrival: &#39;)]
+            if input(&#39;Continue? (y/n): &#39;) == &#39;n&#39;:break
+        p.dump(data,f)
+    try:
+        f = open(&#39;Flights.dat&#39;,&#39;rb&#39;)
+        f.close()
+        confirm = True if input(&#39;ARE YOU SURE YOU WANT TO OVERWRITE? (y/n): &#39;) == &#39;y&#39; else False
+        if confirm:
+            f = open(&#39;Flights.dat&#39;,&#39;wb&#39;)
+            create_for(f)
+            f.close()
+        
+    except FileNotFoundError:
+        f = open(&#39;Flights.dat&#39;,&#39;wb&#39;)
+        create_for(f)
+        f.close()
+
+def search(fno):
+    with open(&#39;Flights.dat&#39;,&#39;rb&#39;) as f:
+        data = p.load(f)
+        if fno in data:
+            print(f&#39;{fno}: {data[fno][0]}, ({data[fno][1]} - {data[fno][2]})&#39;)
+        else:
+            print(&#39;FLIGHT NOT FOUND&#39;)
+    
+while True:
+    print(&#39;&#39;&#39;
+    1. CREATE
+    2. SEARCH
+    3. DISPLAY
+    4. EXIT
+    &#39;&#39;&#39;)
+    ch = int(input(&#39;ENTER YOUR CHOICE : &#39;))
+    if ch == 1:
+        create()
+    elif ch == 2:
+        search(input(&#39;Flight No.: &#39;))
+    elif ch == 3:
+        display()
+    elif ch == 4:
+        break
+
+    
+</code></pre>
+        <hr />
+        <hr />
+        <h1 id="record-12"><br />Record 12</h1>
+        <h2 id="q-create-a-binary-file-interface-for-the-following-2">
+          Q: Create a binary file interface for the following:
+        </h2>
+        <p>
+          (1) Create a record &#39;books.dat&#39;<br />
+          (2) Display all records<br />
+          (3) Update a record
+        </p>
+        <pre><code class="language-py">import pickle as p
+
+def display():
+    with open(&#39;Books.dat&#39;,&#39;rb&#39;) as f:
+        data = p.load(f)
+        for j in (data):
+            print(f&#39;{j}: {&quot;,&quot;.join(data[j])}&#39;)
+
+def create():
+    def create_for(f):
+        data = {}
+        while True:
+            data[input(&#39;Book No.: &#39;)] = [input(&#39;Title: &#39;),input(&#39;Price: &#39;)]
+            if input(&#39;Continue? (y/n): &#39;) == &#39;n&#39;:break
+        p.dump(data,f)
+    try:
+        f = open(&#39;Books.dat&#39;,&#39;rb&#39;)
+        f.close()
+        confirm = True if input(&#39;ARE YOU SURE YOU WANT TO OVERWRITE? (y/n): &#39;) == &#39;y&#39; else False
+        if confirm:
+            f = open(&#39;Books.dat&#39;,&#39;wb&#39;)
+            create_for(f)
+            f.close()
+        
+    except FileNotFoundError:
+        f = open(&#39;Books.dat&#39;,&#39;wb&#39;)
+        create_for(f)
+        f.close()
+
+def update(bno):
+    with open(&#39;Books.dat&#39;,&#39;rb&#39;) as f:
+        data = p.load(f)
+        if bno in data:
+            data[bno] = [input(&#39;Title: &#39;),input(&#39;Price: &#39;)]
+            with open(&#39;Books.dat&#39;,&#39;wb&#39;) as f:
+                f.seek(0)
+                p.dump(data,f)
+        else:
+            print(&#39;BOOK NOT FOUND&#39;)
+
+while True:
+    print(&#39;&#39;&#39;
+    1. CREATE
+    2. UPDATE
+    3. DISPLAY
+    4. EXIT
+    &#39;&#39;&#39;)
+    ch = int(input(&#39;ENTER YOUR CHOICE : &#39;))
+    if ch == 1:
+        create()
+    elif ch == 2:
+        update(input(&#39;Book No.: &#39;))
+    elif ch == 3:
+        display()
+    elif ch == 4:
+        break
+</code></pre>
+        <hr />
+        <hr />
+        <h1 id="record-13"><br />Record 13</h1>
+        <h2 id="q-create-a-csv-interface-for-the-following">
+          Q: Create a csv interface for the following:
+        </h2>
+        <p>
+          (1) Create a record &#39;Employee.csv&#39; storing
+          [Eno,Ename,Salary]<br />
+          (2) Display all records
+        </p>
+        <pre><code class="language-py">import csv 
+
+def display():
+    with open(&#39;Employee.csv&#39;,&#39;r&#39;) as f:
+        data = csv.reader(f)
+        for i in data:
+            print(f&#39;{i[0]}: {i[1]}, {i[2]}&#39;)
+
+def create():
+    def create_for(f):
+        data = []
+        while True:
+            data.append([input(&#39;NAME: &#39;),input(&#39;DEPARTMENT: &#39;),input(&#39;SALARY: &#39;)])
+            if input(&#39;Continue? (y/n): &#39;) == &#39;n&#39;:break
+        csv.writer(f).writerows(data)
+    try:
+        f = open(&#39;Employee.csv&#39;,&#39;r&#39;)
+        f.close()
+        confirm = True if input(&#39;ARE YOU SURE YOU WANT TO OVERWRITE? (y/n): &#39;) == &#39;y&#39; else False
+        if confirm:
+            f = open(&#39;Employee.csv&#39;,&#39;w&#39;)
+            create_for(f)
+            f.close()
+        
+    except FileNotFoundError:
+        f = open(&#39;Employee.csv&#39;,&#39;w&#39;)
+        create_for(f)
+        f.close()
+
+while True:
+    print(&#39;&#39;&#39;
+    1. CREATE
+    2. DISPLAY
+    3. EXIT
+    &#39;&#39;&#39;)
+    ch = int(input(&#39;ENTER YOUR CHOICE : &#39;))
+    if ch == 1:
+        create()
+    elif ch == 2:
+        display()
+    elif ch == 3:
+        break
+</code></pre>
+        <hr />
+        <hr />
+        <h1 id="record-14"><br />Record 14</h1>
+        <h2 id="q-create-a-csv-interface-for-the-following-1">
+          Q: Create a csv interface for the following:
+        </h2>
+        <p>
+          (1) Create a record &#39;Sports.csv&#39; storing [Sport, Competitions,
+          Prizes Won]<br />
+          (2) Display all records<br />
+          (3) Search a record
+        </p>
+        <pre><code class="language-py">import csv 
+
+def display():
+    with open(&#39;Sports.csv&#39;,&#39;r&#39;) as f:
+        data = csv.reader(f)
+        for i in data:
+            print(f&#39;{i[0]}: {i[1]}, {i[2]}&#39;)
+
+def create():
+    def create_for(f):
+        data = []
+        while True:
+            data.append([input(&#39;SPORT: &#39;),input(&#39;COMPETITION: &#39;),input(&#39;PRIZES: &#39;)])
+            if input(&#39;Continue? (y/n): &#39;) == &#39;n&#39;:break
+        csv.writer(f).writerows(data)
+    try:
+        f = open(&#39;Sports.csv&#39;,&#39;r&#39;)
+        f.close()
+        confirm = True if input(&#39;ARE YOU SURE YOU WANT TO OVERWRITE? (y/n): &#39;) == &#39;y&#39; else False
+        if confirm:
+            f = open(&#39;Sports.csv&#39;,&#39;w&#39;)
+            create_for(f)
+            f.close()
+        
+    except FileNotFoundError:
+        f = open(&#39;Sports.csv&#39;,&#39;w&#39;)
+        create_for(f)
+        f.close()
+
+def search(sport):
+    with open(&#39;Sports.csv&#39;,&#39;r&#39;) as f:
+        data = csv.reader(f)
+        for i in data:
+            if sport == i[0]:
+                print(f&#39;{i[0]}: {i[1]}, {i[2]}&#39;)
+while True:
+    print(&#39;&#39;&#39;
+    1. CREATE
+    2. DISPLAY
+    3. SEARCH
+    4. EXIT
+    &#39;&#39;&#39;)
+    ch = int(input(&#39;ENTER YOUR CHOICE : &#39;))
+    if ch == 1:
+        create()
+    elif ch == 2:
+        display()
+    elif ch == 3:
+        search(input(&#39;SPORT: &#39;))
+    elif ch == 4:
+        break
+</code></pre>
+        <hr />
+        <hr />
+        <h1 id="record-15"><br />Record 15</h1>
+        <h2 id="q-create-an-interface-an-integer-stack">
+          Q: Create an interface an integer stack:
+        </h2>
+        <pre><code class="language-py">stack = []
+
+def pop():
+    return stack.pop()
+
+def push(val):
+    stack.append(val)
+
+def display():
+    print(stack)
+
+def peek():
+    return stack[-1]
+
+while True:
+    print(&#39;&#39;&#39;
+    1. PUSH
+    2. POP
+    3. PEEK
+    4. DISPLAY 
+    5. EXIT
+    &#39;&#39;&#39;)
+    ch = int(input(&#39;ENTER YOUR CHOICE : &#39;))
+    if ch == 1:
+        push(input(&#39;ENTER VALUE TO PUSH: &#39;))
+    elif ch == 2:
+        print(pop())
+    elif ch == 3:
+        peek()
+    elif ch == 4:
+        display()
+    elif ch == 5:
+        break
+</code></pre>
+        <hr />
+        <hr />
+        <h1 id="record-16"><br />Record 16</h1>
+        <h2 id="q-create-an-interface-a-stack-containing-eno-ename-salary">
+          Q: Create an interface a stack containing [Eno, Ename, Salary]:
+        </h2>
+        <pre><code class="language-py">stack = []
+
+def pop():
+    return stack.pop()
+
+def push(data):
+    stack.append(data)
+
+def display():
+    for i in stack:
+        print(f&#39;{i[0]}: {i[1]}, {i[2]}&#39;)
+
+def peek():
+    return stack[-1]
+
+while True:
+    print(&#39;&#39;&#39;
+    1. PUSH EMPLOYEE
+    2. POP EMPLOYEE
+    3. PEEK EMPLOYEE
+    4. DISPLAY EMPLOYEES
+    5. EXIT
+    &#39;&#39;&#39;)
+    ch = int(input(&#39;ENTER YOUR CHOICE : &#39;))
+    if ch == 1:
+        push([input(&#39;NO: &#39;),input(&#39;NAME: &#39;),input(&#39;SALARY: &#39;)])
+    elif ch == 2:
+        data = pop()
+        print(f&#39;POPPED EMPLOYEE: {data[0]}: {data[1]}, {data[2]}&#39;)
+    elif ch == 3:
+        data = peek()
+        print(f&#39;PEEKED EMPLOYEE: {data[0]}: {data[1]}, {data[2]}&#39;)
+    elif ch == 4:
+        display()
+    elif ch == 5:
+        break
+</code></pre>
+        <hr />
+      </div>
+    </div>
     <script src="script.js"></script>
     <script src="jqry.js"></script>
-
-</body>
-
+    <script src="prism.js"></script>
+  </body>
 </html>
