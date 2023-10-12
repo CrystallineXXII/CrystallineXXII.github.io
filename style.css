@@ -206,3 +206,15 @@ header.page-header {
   text-align: center;
   border-radius: 2px 2px 10px 10px;
 }
+
+header.open:before, header.open:after {
+  content: ">";
+  display: inline-block;
+  transform: rotate(90deg);
+}
+
+header.closed:before, header.closed:after {
+  content: "<";
+  display: inline-block;
+  transform: rotate(90deg);
+}

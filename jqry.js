@@ -1,12 +1,18 @@
+
+
 $(document).ready(function () {
 
   $("#spotify").slideUp();
-  $("#record").slideUp();
+  $("#record").hide();
 
   $("#crystalline_curated").click(function () {
     $("#spotify").slideToggle();
+    $("#crystalline_curated").toggleClass("open").toggleClass("closed");
+    
+    
   });
   $("#record_heading").click(function () {
-    $("#record").slideToggle(2000);
+    $("#record").toggle();
+     $("#record-heading").toggleClass("open").toggleClass("closed");
   });
 });
