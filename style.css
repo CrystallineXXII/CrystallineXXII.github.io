@@ -218,3 +218,7 @@ header.closed:before, header.closed:after {
   display: inline-block;
   transform: rotate(90deg);
 }
+
+#record, #spotify {
+  display: none;
+}
