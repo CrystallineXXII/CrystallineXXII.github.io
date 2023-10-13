@@ -12,7 +12,7 @@ $(document).ready(function () {
     
   });
   $("#record_heading").click(function () {
-    $("#record").toggle();
-     $("#record-heading").toggleClass("open").toggleClass("closed");
+    $("#record").fadeToggle();
+    $("#record_heading").toggleClass("open").toggleClass("closed");
   });
 });
